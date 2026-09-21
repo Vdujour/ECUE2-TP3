@@ -22,7 +22,7 @@ public class Rectangle {
     }
 
     /*Méthode qui retourne la surface du rectangle*/
-    public double retourneSurface(double longueur, double largeur){
+    public double retourneSurface(){
         double surface = this.longueur * this.largeur;
 
         return surface;
@@ -58,7 +58,7 @@ public class Rectangle {
     }
 
     public String toString() {
-        double s = retourneSurface(longueur, largeur);
+        double s = retourneSurface();
         return "Rectangle{" +
                 "longueur=" + longueur +
                 ", largeur=" + largeur +
