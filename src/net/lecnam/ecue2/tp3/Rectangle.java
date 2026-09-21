@@ -1,5 +1,7 @@
 package net.lecnam.ecue2.tp3;
 
+import java.util.Objects;
+
 public class Rectangle {
 
     double longueur, largeur;
@@ -45,4 +47,23 @@ public class Rectangle {
         return xDansRectangle && yDansRectangle;
     }
 
+    /*Créer une égalité*/
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Rectangle rectangle = (Rectangle) o;
+
+        boolean a = Objects.equals(pointOrigine, rectangle.pointOrigine);
+
+        return Double.compare(longueur, rectangle.longueur) == 0 && Double.compare(largeur, rectangle.largeur) == 0 && Objects.equals(pointOrigine, rectangle.pointOrigine);
+    }
+
+    public String toString() {
+        double s = retourneSurface(longueur, largeur);
+        return "Rectangle{" +
+                "longueur=" + longueur +
+                ", largeur=" + largeur +
+                ", pointOrigine=" + pointOrigine +
+                ", surface=" + s +
+                '}';
+    }
 }
