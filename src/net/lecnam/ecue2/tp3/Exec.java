@@ -19,6 +19,8 @@ public class Exec  {
         /*Utiliser la méthode retourneDistance pour afficher la distance entre 2 points*/
         System.out.println("la distance est de : " + p1.retourneDistance(p2));
 
+        Rectangle r1 = new Rectangle(p1, 5, 3);
+
     }
 
 }

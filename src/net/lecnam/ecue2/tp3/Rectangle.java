@@ -19,4 +19,15 @@ public class Rectangle {
         this.largeur = largeur;
     }
 
+    /*Méthode qui retourne la surface du rectangle*/
+    public double retourneSurface(double longueur, double largeur){
+        double surface = this.longueur * this.largeur;
+
+        return surface;
+    }
+
+    public void translate(double x, double y){
+        this.pointOrigine.translate(x ,y);
+    }
+
 }
