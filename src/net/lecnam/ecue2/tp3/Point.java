@@ -1,5 +1,7 @@
 package net.lecnam.ecue2.tp3;
 
+import java.util.Objects;
+
 public class Point {
 
     double x, y;
@@ -17,8 +19,11 @@ public class Point {
     }
 
     /*Définir la méthode equals pour dire quand nos points sont égaux*/
-    public boolean equals(Object o){
-        return this.x == this.y;
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Point point = (Point) o;
+
+        return Double.compare(x, point.x) == 0 && Double.compare(y, point.y) == 0;
     }
 
     /*Définir une méthode toString pour afficher nos points*/
