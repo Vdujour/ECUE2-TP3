@@ -3,7 +3,7 @@ package net.lecnam.ecue2.tp3;
 public class Rectangle {
 
     double longueur, largeur;
-    Point pointOrigine = new Point(1,1);
+    Point pointOrigine;
 
     /*Constructeur 1*/
     public Rectangle(Point p, double longueur, double largeur){
