@@ -22,12 +22,18 @@ public class Exec  {
         Rectangle r1 = new Rectangle(p1, 5, 5);
         System.out.println("Le rectangle contient t il le point ? " + r1.contient(p2));
 
-        Rectangle r2 = new Rectangle(p2, 5, 5);
+        Rectangle r2 = new Rectangle(p2, 15, 15);
         boolean rEquals = r1.equals(r2);
         System.out.println(rEquals);
 
         System.out.println(r1.toString());
         System.out.println(r2.toString());
+
+        Dessin d1 = new Dessin();
+        d1.ajout(r1);
+        d1.ajout(r2);
+
+        System.out.println(d1.retourneSurface());
 
     }
 
