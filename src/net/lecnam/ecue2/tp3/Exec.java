@@ -35,6 +35,8 @@ public class Exec  {
 
         System.out.println(d1.retourneSurface());
 
+        System.out.println(d1.retournePlusGrandRectangle());
+
     }
 
 }
